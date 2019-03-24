@@ -29,7 +29,8 @@ function draw() {
 		}
 		if (pipes[i].hit(bird)) {
 			bird.highlight = true
-
+			bird.velocity = 0
+			bird.gravity = 0
 			pipes = ""
 
 		}
