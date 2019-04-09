@@ -53,3 +53,7 @@ function keyPressed() {
 		bird.up()
 	}
 }
+
+window.addEventListener("mousedown", function () {
+	bird.up()
+})
