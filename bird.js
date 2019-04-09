@@ -20,7 +20,7 @@ class Bird {
 		textFont("Courier");
 		textSize(20);
 		fill(0);
-		text(this.score, this.x - 6, this.y + 6);
+		text(this.score, this.x - 10, this.y + 8);
 	}
 	hide() {
 		fill(0)

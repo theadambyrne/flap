@@ -7,7 +7,6 @@ class Pipe {
 		this.speed = 3
 		this.highlight = false
 	}
-
 	show() {
 		if (this.highlight) {
 			fill(255, 0, 0)
@@ -17,11 +16,9 @@ class Pipe {
 		rect(this.x, 0, this.width, this.top)
 		rect(this.x, height - this.bottom, this.width, this.bottom)
 	}
-
 	update() {
 		this.x -= this.speed
 	}
-
 	hit(sprite) {
 		if (sprite.y < this.top || sprite.y > height - this.bottom) {
 			if (sprite.x > this.x && sprite.x < this.x + this.width) {
@@ -31,5 +28,4 @@ class Pipe {
 		}
 		return false
 	}
-
 }
